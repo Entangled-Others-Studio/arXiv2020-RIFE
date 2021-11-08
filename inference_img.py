@@ -120,7 +120,7 @@ else:
                 mid = model.inference(img_list[j], img_list[j + 1])
                 tmp.append(img_list[j])
                 tmp.append(mid)
-            tmp.append(img_list[j])
+            tmp.append(img_list[-1])
             img_list = tmp
         outer_list.extend(img_list)
     img_list = outer_list
