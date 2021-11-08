@@ -122,7 +122,8 @@ else:
                 tmp.append(mid)
             tmp.append(img_list[-1])
             img_list = tmp
-        outer_list.extend(img_list)
+        outer_list.extend(img_list[:-1])
+    outer_list.append(imgs[-1])
     img_list = outer_list
 if not os.path.exists('output'):
     os.mkdir('output')
